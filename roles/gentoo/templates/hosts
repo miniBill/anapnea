@@ -1,2 +1,27 @@
-127.0.0.1  localhost.localdomain localhost
+#/etc/hosts: Local Host Database
+#
+# This file describes a number of aliases-to-address mappings for the for
+# local hosts that share this file.
+#
+# In the presence of the domain name service or NIS, this file may not be
+# consulted at all; see /etc/host.conf for the resolution order.
+#
+
+# IPv4 and IPv6 localhost aliases
+127.0.0.1       localhost
+::1             localhost
+
 {{ ansible_default_ipv4.address }} {{ inventory_hostname }}.{{ domain }} {{ inventory_hostname }}
+#94.23.68.199    earth.anapnea.net anapnea.net latisanalingue.it
+#fcce:7e30:5c6f:66e0:daf5:9c8e:e976:d282 anapnea.hype
+#fca8:2dd7:4987:a9be:c8fc:34d7:05a1:4606 cubic.sonnet irc.hype
+#fc5d:baa5:61fc:6ffd:9554:67f0:e290:7535 hypedns.solver
+
+# IPV6 versions of localhost and co
+::1 ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+
