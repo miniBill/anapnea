@@ -36,7 +36,7 @@
   file: path=/mnt/gentoo/get_stage.sh state=absent
 
 - name: copy resolv.conf
-  template: src=resolv.conf dest=/mnt/gentoo/etc mode=644
+  copy: src=resolv.conf dest=/mnt/gentoo/etc mode=644
 
 - name: create portage directory
   command: chroot /mnt/gentoo bash -c 'source /etc/profile; mkdir /usr/portage' creates=/mnt/gentoo/usr/portage
