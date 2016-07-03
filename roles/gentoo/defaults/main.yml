@@ -6,8 +6,8 @@ swap_size: 2048m
 fstype: ext4
 force_format: no
 mirror: http://mirror.mcs.anl.gov/pub/gentoo 
-timezone: America/Los_Angeles
-domain: met.tfoundry.com
+timezone: Europe/Paris
+domain: anapnea.net
 kernel: config-3.13.0-24-generic
 make_opts: -j4
 management_interface: "{{ ansible_default_ipv4.interface }}"

@@ -1,8 +1,7 @@
-ansible-gentoo
-==============
+anapnea
+=======
 
-This role demonstrates the automatic configuration of a gentoo system from
-minimal install to first boot.
+This repository will represent the complete configuration for anapnea.
 
 Role Variables
 --------------
@@ -10,7 +9,7 @@ Role Variables
 The role defines several defaults that an be overridden by the user
 
 pubkey
-    The public key to deploy to the root user on the *minimal cd*. Primarily to
+    The public key to deploy to the root user on the live cd. Primarily to
     negate the need for a password if you need to run twice.  
     default: ~/.ssh/id_rsa.pub
 
@@ -36,11 +35,11 @@ mirror
 
 timezone
     The timezone to set for the new system.  
-    default: America/Los_Angeles
+    default: Europe/Paris
 
 domain
     main domain for the new system  
-    default: met.tfoundry.com
+    default: anapnea.net
 
 kernel
     The kernel configuration to use.  
