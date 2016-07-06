@@ -1,0 +1,5 @@
+[all]
+127.0.0.1 ansible_user=root ansible_ssh_port=2222
+
+[all:vars]
+ansible_python_interpreter = /usr/bin/python2
