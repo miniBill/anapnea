@@ -48,7 +48,8 @@
   tags:
     - storage
 
-- command: touch /tmp/parted_is_done
+- name: Creates a file that signals the end of parted
+  file: path=/tmp/parted_is_done state=touch
 
 - name: Create Main Volume Group
   lvg: "pvs={{ main_disk }}3 vg=main"
