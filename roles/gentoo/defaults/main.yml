@@ -5,7 +5,7 @@ main_disk: /dev/sda
 swap_size: 2048m
 fstype: ext4
 force_format: no
-mirror: http://mirror.mcs.anl.gov/pub/gentoo 
+mirror: http://gentoo.mirrors.ovh.net/gentoo-distfiles/
 timezone: Europe/Paris
 domain: anapnea.net
 kernel: config-3.13.0-24-generic
